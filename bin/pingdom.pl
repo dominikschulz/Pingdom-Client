@@ -24,3 +24,9 @@ my $API = Pingdom::Client::->new({
 });
 
 print Dumper($API->contacts());
+
+=head1 NAME
+
+pingdom cli
+
+=cut
