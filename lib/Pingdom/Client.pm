@@ -19,7 +19,7 @@ use URI::Escape ();
 # use autodie;
 # use MooseX::Params::Validate;
 
-our $VERSION = '0.0.1';
+our $VERSION = '0.11';
 
 has '_json' => (
 	'is'	=> 'ro',
