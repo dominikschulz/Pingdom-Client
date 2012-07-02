@@ -1265,7 +1265,7 @@ Pingdom::Client - a perl implementation of the Pingdom REST API.
 
 =head1 VERSION
 
-This documentation refers to Pingdom::Client version 0.0.1.
+This documentation refers to Pingdom::Client version 0.11.
 
 =head1 SYNOPSIS
 
@@ -1452,16 +1452,16 @@ None known.
 =head1 BUGS AND LIMITATIONS
 
 There are no known bugs in this module.
-Please report problems to Dominik Schulz (dominik.schulz@gauner.org)
+Please report problems to Dominik Schulz (dominik.schulz@egentic-systems.com)
 Patches are welcome.
 
 =head1 AUTHOR
 
-Dominik Schulz (dominik.schulz@gauner.org)
+Dominik Schulz, C<< <dominik.schulz at egentic-systems.com> >>
 
-=head1 LICENCE AND COPYRIGHT
+=head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2012 Dominik Schulz (dominik.schulz@gauner.org). All rights reserved.
+Copyright 2012 eGENTIC Systems GmbH.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.

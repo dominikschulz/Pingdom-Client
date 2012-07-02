@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME                => 'Pingdom::Client',
-    AUTHOR              => q{Dominik Schulz <dominik.schulz@gauner.org>},
+    AUTHOR              => q{Dominik Schulz <dominik.schulz@egentic-systems.com>},
     VERSION_FROM        => 'lib/Pingdom/Client.pm',
     ABSTRACT_FROM       => 'lib/Pingdom/Client.pm',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002
