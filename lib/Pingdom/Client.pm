@@ -19,8 +19,6 @@ use URI::Escape ();
 # use autodie;
 # use MooseX::Params::Validate;
 
-our $VERSION = '0.11';
-
 has '_json' => (
 	'is'	=> 'ro',
 	'isa'	=> 'JSON',
@@ -1262,10 +1260,6 @@ __END__
 =head1 NAME
 
 Pingdom::Client - a perl implementation of the Pingdom REST API.
-
-=head1 VERSION
-
-This documentation refers to Pingdom::Client version 0.11.
 
 =head1 SYNOPSIS
 
