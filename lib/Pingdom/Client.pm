@@ -1,4 +1,5 @@
 package Pingdom::Client;
+# ABSTRACT: a perl implementation of a client for the Pingdom REST API.
 
 use 5.010_000;
 use mro 'c3';
@@ -73,7 +74,7 @@ sub _init_ua {
     my $self = shift;
 
     my $UA = LWP::UserAgent::->new();
-    $UA->agent('Domain::Robot @VERSION@');
+    $UA->agent('Pingdom::Client/0.01');
 
     return $UA;
 }
@@ -1446,16 +1447,16 @@ None known.
 =head1 BUGS AND LIMITATIONS
 
 There are no known bugs in this module.
-Please report problems to Dominik Schulz (dominik.schulz@egentic-systems.com)
+Please report problems to Dominik Schulz (dominik.schulz@gauner.org)
 Patches are welcome.
 
 =head1 AUTHOR
 
-Dominik Schulz, C<< <dominik.schulz at egentic-systems.com> >>
+Dominik Schulz, C<< <dominik.schulz at gauner.org> >>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012 eGENTIC Systems GmbH.
+Copyright 2012 Dominik Schulz.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
