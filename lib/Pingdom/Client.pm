@@ -128,7 +128,7 @@ sub _validate_params {
                                         return; # no int
                                 }
                         } elsif($ref->{$key} eq 'Bool') {
-                                if($params->{$key} !~ m/^[01]$/) {
+                                if($params->{$key} !~ m/^(?:true|false)$/) {
                                         return; # no bool
                                 }
                         } elsif($ref->{$key} eq 'Ids') {
