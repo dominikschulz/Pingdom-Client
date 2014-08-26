@@ -52,6 +52,12 @@ has 'apikey' => (
     'required' => 1,
 );
 
+has 'accountemail' => (
+    'is'    => 'rw',
+    'isa'   => 'Str',
+    'required' => 0,
+);
+
 has 'apiurl' => (
     'is'    => 'rw',
     'isa'   => 'Str',
@@ -180,6 +186,9 @@ sub _api_call {
 
     $req->authorization_basic( $self->username(), $self->password() );
     $req->header( 'App-Key', $self->apikey() );
+    if ( $self->accountemail() ) {
+        $req->header( 'Account-Email', $self->accountemail() );
+    }
 
     my $res = $self->_ua()->request($req);
 
@@ -1265,6 +1274,7 @@ __END__
         'username' => 'user',
         'password' => 'pass',
         'apikey'   => 'key',
+        'accountemail'   => 'email@example.com', #Specify the account owner if using a team account. Optional
     });
     print $API->contacts();
 
