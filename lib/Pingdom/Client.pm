@@ -359,6 +359,7 @@ sub check_create {
         'notifywhenbackup' => 'Bool',
         'url' => 'Str',
         'encryption' => 'Bool',
+        'use_legacy_notifications' => 'Bool',
         'port' => 'Int',
         'auth' => 'Str',
         'shouldcontain' => 'Str',
